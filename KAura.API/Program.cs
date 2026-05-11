@@ -1,4 +1,7 @@
 
+using KAura.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace KAura.API
 {
     public class Program
@@ -6,6 +9,13 @@ namespace KAura.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // Database configuration
+            builder.Services.AddDbContext<ApplicationDbContext>(options=>
+                options.UseNpgsql(
+                    builder.Configuration.GetConnectionString("DefaultConnection")
+                    )
+                );
 
             // Add services to the container.
 

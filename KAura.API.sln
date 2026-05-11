@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36717.8 d17.14
+VisualStudioVersion = 17.14.36717.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KAura.API", "KAura.API\KAura.API.csproj", "{5513895E-BB4F-4B05-BBBE-F399E036FF36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3B224AB2-9B81-46F2-BAD5-0A088B0D4E0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KAura.Domain", "KAura.Domain\KAura.Domain.csproj", "{142747D4-3A56-4EAB-A230-1FA866F29A3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KAura.Application", "KAura.Application\KAura.Application.csproj", "{1807A87C-A9FC-4DD9-A838-AA2CBBC938EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KAura.Infrastructure", "KAura.Infrastructure\KAura.Infrastructure.csproj", "{D799D40C-9F9B-4DC6-B96E-CA4648412579}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +25,27 @@ Global
 		{5513895E-BB4F-4B05-BBBE-F399E036FF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5513895E-BB4F-4B05-BBBE-F399E036FF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5513895E-BB4F-4B05-BBBE-F399E036FF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{142747D4-3A56-4EAB-A230-1FA866F29A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142747D4-3A56-4EAB-A230-1FA866F29A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142747D4-3A56-4EAB-A230-1FA866F29A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142747D4-3A56-4EAB-A230-1FA866F29A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1807A87C-A9FC-4DD9-A838-AA2CBBC938EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1807A87C-A9FC-4DD9-A838-AA2CBBC938EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1807A87C-A9FC-4DD9-A838-AA2CBBC938EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1807A87C-A9FC-4DD9-A838-AA2CBBC938EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D799D40C-9F9B-4DC6-B96E-CA4648412579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D799D40C-9F9B-4DC6-B96E-CA4648412579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D799D40C-9F9B-4DC6-B96E-CA4648412579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D799D40C-9F9B-4DC6-B96E-CA4648412579}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5513895E-BB4F-4B05-BBBE-F399E036FF36} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{142747D4-3A56-4EAB-A230-1FA866F29A3D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1807A87C-A9FC-4DD9-A838-AA2CBBC938EA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D799D40C-9F9B-4DC6-B96E-CA4648412579} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {13996B46-59EA-4B5E-8207-E19124D230FF}
